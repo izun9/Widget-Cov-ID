@@ -1,0 +1,205 @@
+html, body {
+    -webkit-app-region: drag;   
+    background-color: #00000000;
+    color: #000;
+  }
+  .drag-enable {
+    -webkit-app-region: drag;
+  }
+  .drag-disable {
+    -webkit-app-region: no-drag;
+  }
+  html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    background-color: #00000000;
+  }
+  
+  body {
+    font-family: sans-serif;
+    overflow: hidden;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    background-color: #00000000;
+  }
+  
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 700;
+    color: #000;
+    margin: 0;
+  }
+  
+  .text-muted {
+    color: #000 !important;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase !important;
+  }
+  
+  .text-white {
+    color: #000 !important;
+  }
+  
+  .shadow {
+    box-shadow: 0 0 2rem 0 solid !important;
+  }
+  
+  .rounded-circle {
+    border-radius: 50% !important;
+  }
+  
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+  
+  .container {
+    width: 280px;
+    height: auto;
+    background: #0000000c;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  h1.title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .col {
+    max-width: 100%;
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+  
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, 0.05);
+    background-clip: border-box;
+    border: 0;
+    box-shadow: 0 0 2rem 0 rgba(136, 152, 170, 0.15);
+    border-radius: 15px;
+    margin: 10px;
+  }
+  
+  .card-body {
+    min-height: 1px;
+    padding: 1.5rem;
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-radius: 15px;
+  }
+  
+  .card-body .h2 {
+    font-size: 1rem;
+  }
+  
+  .icon {
+    width: 2rem;
+    height: 2rem;
+    max-width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .icon-shape {
+    display: inline-flex;
+    padding: 12px;
+    text-align: center;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-shape i,
+  .icon-shape svg {
+    font-size: 1.5rem;
+  }
+  
+  .bg-gradient-red {
+    background: linear-gradient(87deg, #f5365c 0, #f55f36 100%) !important;
+  }
+  
+  .bg-gradient-blue {
+    background: linear-gradient(87deg, #11ceef 0, #1171ef 100%) !important;
+  }
+  
+  .bg-gradient-green {
+    background: linear-gradient(87deg, #2dce88 0, #2dcecb 100%) !important;
+  }
+  
+  .bg-gradient-orange {
+    background: linear-gradient(87deg, #fb6240 0, #fbb040 100%) !important;
+  }
+  @media (min-width: 767px) {
+    .social {
+      position: absolute;
+      right: 0;
+      top: 33.33%;
+    }
+    .social ul {
+      display: flex;
+      flex-direction: column;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .social ul li {
+      margin: 5px 10px;
+    }
+  
+    .social ul li a {
+      color: #403f4c;
+      font-size: 25px;
+      height: 50px;
+      width: 50px;
+      text-decoration: none;
+    }
+  
+    .social ul li a:hover {
+      color: #272523;
+    }
+  }
+  
+  :root.default {
+    --global-backgroundcolor: #0000000c;
+    --global-h1-size: 1.5em;
+  }
+  
+  :root.black {
+    --global-backgroundcolor: lightblue;
+    --global-h1-size: 1.5em;
+  }
+  
+  body {
+    background-color: var(--global-backgroundcolor);
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 1em;
+    font-size: var(--global-h1-size);
+  }
+  
+  a {
+    -webkit-app-region: no-drag;
+  }
+  

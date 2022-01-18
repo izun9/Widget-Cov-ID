@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="dicoding:email" content="com.moilmi@gmail.com">
+    <title>Widget Cov-ID</title>
+    <link rel="stylesheet" href="ass/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">   
+  </head>
+
+  <body><br>
+    <h1 class="title">Coronavirus (COVID-19) <br> Live Tracker Indonesia</h1>
+    
+    <div class="container">
+      <div class="card card-stats">
+        <div class="card-body">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted">Total Kasus</h5>
+            <span class="h2 font-weight-bold color-red count" id="positifid">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-red text-white rounded-circle shadow">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card card-stats">
+
+        <div class="card-body">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted">Meninggal</h5>
+            <span class="h2 font-weight-bold color-blue count" id="meninggalid">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-blue text-white rounded-circle shadow">
+            <i class="fas fa-procedures"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card card-stats">
+
+        <div class="card-body">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted">Sembuh</h5>
+            <span class="h2 font-weight-bold color-green count" id="sembuhid">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-green text-white rounded-circle shadow">
+            <i class="fas fa-child"></i>
+          </div>
+        </div>
+      </div>
+      <div class="card card-stats">
+
+        <div class="card-body">
+          <div class="col">
+            <h5 class="card-title text-uppercase text-muted">Update</h5>
+            <span class="h4 font-weight-bold new_cases color-orange count" id="terakhirupdate">0</span>
+          </div>
+          <div class="icon icon-shape bg-gradient-orange text-white rounded-circle shadow">
+            <i class="fas fa-bell"></i>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+<h5>Created by Mo Ilmi</h5>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="ass/script.js" ></script>  
+    <script src="renderer.js"></script>
+  </body>
+</html>

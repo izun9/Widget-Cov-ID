@@ -1,0 +1,81 @@
+{
+  "name": "widget-cov-id",
+  "version": "1.0.0",
+  "description": "A minimal Widget Covid-19 Indonesia",
+  "icon": "ass/favicon.ico",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "package-win": "electron-packager . widget-cov-id --ignore=archives --ignore=AppPackages --ignore=BundleArtifacts --ignore=bin$ --ignore=node_ --overwrite --platform=win32 --arch=ia32 --icon=ass/favicon.ico --version-string.CompanyName=izun9 --version-string.FileDescription=Mo ilmi && Al Hikni --version-string.ProductName=Widget Cov-ID"
+  },
+  "repository": "https://github.com/izun9",
+  "keywords": [
+    "moilmi",
+    "al-hikni",
+    "covid",
+    "widget"
+  ],
+  "author": "Mo Ilmi && Al Hikni",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.51",
+    "@electron-forge/maker-deb": "^6.0.0-beta.51",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.51",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.51",
+    "@electron-forge/maker-zip": "^6.0.0-beta.51",
+    "electron": "^8.2.5",
+    "electron-builder": "^22.6.1",
+    "electron-winstaller": "^4.0.0",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "electron-packager": "^14.2.1",
+    "electron-reload": "^1.5.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.5.1",
+    "xel": "0.0.220"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "electron_quick_start"
+          }
+        }
+      ]
+    }
+  },
+  "build": {
+    "productName": "Widget Cov-ID",
+    "icon": "ass/favicon.ico",
+    "directories": {
+      "output": "crot"
+    },
+    "win": {
+      "target": [ "nsis:ia32", "nsis:x64", "portable:ia32", "portable:x64" ]
+    },
+    "nsis": {
+      "artifactName": "${productName}[${os}_${arch}-installer].${ext}"
+    },
+    "portable": {
+      "artifactName": "${productName}[${os}_${arch}-portable].${ext}"
+    },
+    "asar": true,
+    "files": [
+      "index.html",
+      "LICENCE.md",
+      "ass/**",
+      "README.md",
+      "renderer.js",
+      "preload.js",
+      "main.js"
+    ]
+  }
+}
